@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mistaken Soundboard</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <h1>Mistaken Soundboard</h1>
+    <img src="static/img/logo.png"/><br>
+    <div class="button-container">
+      <button onclick="playSound('static/sound/aaaa.mp3')">AAAAHH!!</button>
+      <button onclick="playSound('static/sound/pesao.mp3')">Pesao</button>
+      <button onclick="playSound('static/sound/gilipollas.mp3')">¿Qué haces tú?</button>
+      <button onclick="playSound('static/sound/sabandija.mp3')">Sabandija</button>
+    </div>
+    
+    <script>
+      function playSound(soundFile) {
+        var sound = new Audio(soundFile);
+        sound.play();
+      }
+    </script>
+  </body>
+</html>
