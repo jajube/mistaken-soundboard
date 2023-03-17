@@ -17,10 +17,25 @@
       <button onclick="playSound('static/sound/sabandija.mp3')">Sabandija</button>
     </div>
     
+    <button id="stop-button" onclick="stopSound()">STOP</button>
+
     <script>
+      var currentSound;
+
       function playSound(soundFile) {
-        var sound = new Audio(soundFile);
-        sound.play();
+        if (currentSound) {
+          currentSound.pause();
+        }
+        currentSound = new Audio(soundFile);
+        currentSound.play();
+      }
+
+      function stopSound() {
+        if (currentSound) {
+          currentSound.pause();
+          currentSound.currentTime = 0;
+          currentSound = null;
+        }
       }
     </script>
   </body>
