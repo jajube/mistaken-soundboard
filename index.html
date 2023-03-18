@@ -10,15 +10,31 @@
   </head>
   <body>
     <h1>Mistaken Soundboard</h1>
-    <img src="static/img/logo.png"/><br>
-    <div class="button-container">
-      <button onclick="playSound('static/sound/aaaa.mp3')">AAAAHH!!</button>
-      <button onclick="playSound('static/sound/pesao.mp3')">Pesao</button>
-      <button onclick="playSound('static/sound/gilipollas.mp3')">¿Qué haces tú?</button>
-      <button onclick="playSound('static/sound/sabandija.mp3')">Sabandija</button>
+    <div class="container">
+      <div class="logo-container" alt="Logo de Mister Mistaken">
+        <img src="static/img/logo.png"/>
+      </div>
+      <div class="button-container">
+        <button onclick="playSound('static/sound/aaaa.mp3')">AAAAHH!!</button>
+        <button onclick="playSound('static/sound/pesao.mp3')">Pesao</button>
+        <button onclick="playSound('static/sound/gilipollas.mp3')">¿Qué haces tú?</button>
+        <button onclick="playSound('static/sound/sabandija.mp3')">Sabandija</button>
+        <button onclick="playSound('static/sound/bailando.mp3')">Me voy bailando</button>
+        <button onclick="playSound('static/sound/cago_en_dios.mp3')">Cago en Dios</button>
+        <button onclick="playSound('static/sound/como.mp3')">¿CÓOOMO?</button>
+        <button onclick="playSound('static/sound/vomitar.mp3')">Vomitar cosas</button>
+        <button onclick="playSound('static/sound/hachita.mp3')">¡Hachita por aquí!</button>
+        <button onclick="playSound('static/sound/negros.mp3')">Los negros</button>
+        <button onclick="playSound('static/sound/epicardo.mp3')">Epicardo</button>
+        <button onclick="playSound('static/sound/infiltrar.mp3')">Me voy a infiltrar</button>
+        <button onclick="playSound('static/sound/hijo_de_puta.mp3')">Hijo de puta</button>
+        <button onclick="playSound('static/sound/a_tomar_por_culo.mp3')">A tomar por culo</button>
+        <button onclick="playSound('static/sound/que_es_eso.mp3')">¿¡QUÉ ES ESO!?</button>
+        <button onclick="playSound('static/sound/quita_hombre.mp3')">¡QUITA, HOMBRE!</button>
+        <button onclick="playSound('static/sound/buenisima.mp3')">¡Buenísima!</button>
+      </div>
+      <button id="stop-button" onclick="stopSound()">STOP</button>
     </div>
-    
-    <button id="stop-button" onclick="stopSound()">STOP</button>
 
     <script>
       var currentSound;
